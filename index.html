@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="weather-card">
+            <div class="bg">
+                <img src="bg.png" alt="" srcset="">
+            </div>
+            <div class="search">
+                <div class="group">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" class="search-icon">
+                        <g>
+                            <path
+                                d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                            </path>
+                        </g>
+                    </svg>
+
+                    <input id="searchbar" class="input" type="search" placeholder="Search..." name="searchbar" />
+                </div>
+                <div class="search">
+                    <button class="button" onclick="weather()">
+                        <span class="span">🔎</span>
+                    </button>
+                </div>
+            </div>
+            <div class="temp">
+                <div id="temp-degree">
+                    <h1 id="degree">0°c</h1>
+                </div>
+                <div id="city-name">
+                    <p id="city">City name</p>
+                </div>
+            </div>
+            <div class="wind-humidity">
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <p id="windP">  0</p>
+                </div>
+                <div class="humidity">
+                    <i class="fa-solid fa-water"></i>
+                    <p id="humidityP">  0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/204fd8c520.js" crossorigin="anonymous"></script>   
+</body>
+
+</html>
